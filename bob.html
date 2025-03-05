@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bobbbbbbbbbbb</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .meme-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            transition: opacity 0.2s;
+        }
+        .slider-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>bob🤑</h1>
+    <div class="meme-container">
+        <img id="memeImage" src="bob.jpg" alt="bob">
+    </div>
+    <div class="slider-container">
+        <label for="bobSlider">0% Bob</label>
+        <input type="range" id="bobSlider" min="0" max="100" value="100">
+        <label for="bobSlider">100% Bob</label>
+    </div>
+
+
+    <script>
+        const slider = document.getElementById("bobSlider");
+        const image = document.getElementById("memeImage");
+
+
+        slider.addEventListener("input", function() {
+            image.style.opacity = slider.value / 100;
+        });
+    </script>
+
+
+</body>
+</html>
